@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+<html lang="id">
+    <center>
+    <head>	
+        <title>IMAGE PICKER</title></head>
+        <style type="text/css">
+        body
+            {
+             flex: 20px
+               
+            } 
+        #judul
+        {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }    
+        
+        </style>
+        
+        <body bgcolor="cyan">
+           <h1 id="judul" align="center"> Beberapa Pesantren di Indonesia </h1>
+              <br>
+              <select onchange="gantigambar();" id="listgambar">
+                <option value="ayo mondok">Pilih Nama Pesantren</option>	
+                
+                <option value="arrisalah.jpeg">arrisalah</option>
+                <option value="gontor.jpeg">gontor</option>
+                <option value="lirboyo.jpeg">lirboyo</option>
+                <option value="walisongo.jpeg">walisongo</option>
+            </select>		
+            <br/>	
+            <img src="ayo mondok.jpeg" style="width: 100%" id="gambar">
+            <script type="text/javascript">	
+                function gantigambar()
+                 {		
+                     let gambar = document.getElementById("listgambar").value;		
+                     document.getElementById("gambar").src = gambar;		
+                     alert("hasil gambar pesantren " + gambar);	  
+                   }
+               </script>
+         </body>
+        </center>
+</html>
